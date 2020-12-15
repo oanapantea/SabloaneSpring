@@ -12,7 +12,7 @@ import ro.uvt.sabloane.services.BookService;
 @RestController
 @OpenAPIDefinition
 @RequestMapping("/books")
-@Tag(name = "Courses")
+@Tag(name = "Books")
 public class BookController {
 
     private BookService bookService;
