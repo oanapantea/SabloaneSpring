@@ -1,12 +1,9 @@
 package ro.uvt.sabloane.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 import ro.uvt.sabloane.lab11.ClientComponent;
 
 @Controller
@@ -23,14 +20,14 @@ public class HelloController {
 
     @RequestMapping("hello1")
     @ResponseBody
-    public String hello1(){
+    public String hello1() {
         return "Hello from SpringBoot";
     }
 
     @RequestMapping("hello2")
     @ResponseBody
-    public String hello2(){
-        return "Hello from Client1 = " + client1.toString() + " and Client2 = " + client2.toString() ;
+    public String hello2() {
+        return "Hello from Client1 = " + client1.toString() + " and Client2 = " + client2.toString();
     }
 
 }
