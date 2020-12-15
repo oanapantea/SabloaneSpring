@@ -1,15 +1,18 @@
 package ro.uvt.sabloane.controller;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ro.uvt.sabloane.model.Element;
 import ro.uvt.sabloane.model.entity.Book;
 import ro.uvt.sabloane.services.BookService;
 
-@Controller
+@RestController
+@OpenAPIDefinition
 @RequestMapping("/books")
+@Tag(name = "Courses")
 public class BookController {
 
     private BookService bookService;
